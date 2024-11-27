@@ -1,4 +1,2 @@
-Four files (STRUCTSET.h, MyCplex.h, MyCplex.cpp, and SingleLayerGeoNet.cpp) are all codes, which are written in C++.
-Data set includes 20 "*.csv" files.
-Compile these codes using Mircosoft visual studio with configuring third-party library Cplex.
-Run the compiled program with inputting the data and you can output the results.
+Folder "Data" contains the related data set used in this paper.
+Folder "Code" is the source code of the presented algorithm, which is written by C++.
