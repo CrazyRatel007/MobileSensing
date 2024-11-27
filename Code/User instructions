@@ -1,4 +1,4 @@
-This file contains the source code presented in our paper, and this code was written in C++.
+This file contains the source code presented in our paper, and this code was written in C++ and had been well configurated with Cplex (in the folder "LIB").
 (1) Install visual studio 2019 in the computer.
 (2) Open the code by clicking MultiLayerNetworkAnalysis.sln and using visual studio.
 (3) Let assume the name of compiled file is "MultiLayerNetworkAnalysis.exe".
