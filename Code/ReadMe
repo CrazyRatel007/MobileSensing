@@ -1,0 +1,14 @@
+This file contains the source code presented in our paper, and this code was written in C++.
+(1) Install visual studio 2019 in the computer.
+(2) Open the code by clicking MultiLayerNetworkAnalysis.sln and using visual studio.
+(3) Let assume the name of compiled file is "MultiLayerNetworkAnalysis.exe".
+(4) Put "MultiLayerNetworkAnalysis.exe" and folder "Data" in a same folder.
+(5) Double-click "MultiLayerNetworkAnalysis.exe"  to run the executable program and output four types of files "Objective.csv", "XTaxiNumber.csv","XBusFleet.csv", "RoadVisitedProbability.csv".
+(6) "Objective.csv" contains three fields: the taxi fleet size, bus taxi fleet size, and the gobal sensing ratio. This file can be directly used to draw the results of gobal sensing ratio, such as Fig.4.
+(7) When X number of sensors are utilized, the best taxi fleet size is stored in "XTaxiNumber.csv", the optimal bus fleet constitute is stored in "XBusFleet.csv", and the final visited probability for each road is stored in "RoadVisitedProbability.csv".
+(8) "RoadVisitedProbability.csv" can be used to describe the sensing heterogeneity and spatial distribution of sensing probability. As a result, Figs. 5, 6, and 8 can drawn.
+
+The above steps can be used to optimize bus-taxi hybrid fleet. For single bus or taxi hybrid fleet, simple modifications in code are necessary.
+(a) For single bus fleet, the code "MultiRoutePlanningIntegration(tTotalEdge, tTaxiRandomVisitRoadProbability,10, pDeterministicVisitRoadProbability,9, tRoadLengthSet,0,19);" is changed to "MultiRoutePlanningIntegration(tTotalEdge, tTaxiRandomVisitRoadProbability,0, pDeterministicVisitRoadProbability,9, tRoadLengthSet,0,9);"
+(b) For single taxi fleet, the code "MultiRoutePlanningIntegration(tTotalEdge, tTaxiRandomVisitRoadProbability,10, pDeterministicVisitRoadProbability,9, tRoadLengthSet,0,19);" is changed to ""MultiRoutePlanningIntegration(tTotalEdge, tTaxiRandomVisitRoadProbability,10, pDeterministicVisitRoadProbability,0, tRoadLengthSet,0,10);"
+Then, recompile the code and above steps (3)-(8) are repeated to generate the sensing results for single bus or taxi fleet.
