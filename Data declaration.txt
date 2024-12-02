@@ -1,0 +1,4 @@
+There are three types of data:
+(1) "EdgeLength.csv" records the attribute of roads. Each row in this file has two fields and they indicate the road number and corresponding road length, respectively.
+(2) "Bus-X.csv" records all road numbers visited by a specific bus X, where "X" denotes the bus number.
+(3) "XTaxi-Probability.csv" records the taxi visiting probability, where "X" denotes the size of taxi fleet. Each row in this file has three fields and they indicate the size of taxi fleet,the number of road, corresponding visited probailty, respectively. 
